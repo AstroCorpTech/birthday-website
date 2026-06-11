@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Brother — 25 Years of You</title>
+    <link rel="stylesheet" href="style.css?v=18">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Preparing something special...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-icon">✦</span>
+            <span class="nav-title">25</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#reasons">25 Reasons</a></li>
+            <li><a href="#gallery">Memories</a></li>
+            <li><a href="#timeline">Journey</a></li>
+            <li><a href="#letters">Letters</a></li>
+            <li><a href="#wish">My Wish</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-mesh"></div>
+        <div class="hero-spotlight" id="heroSpotlight"></div>
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="star-popup" id="starPopup">
+            <div class="star-popup-inner">
+                <span class="star-icon">✦</span>
+                <span class="star-name" id="starName"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-photo-frame" id="heroPhoto">
+                <img src="images/photo-main.jpg?v=18" alt="My Brother">
+                <div class="photo-ring"></div>
+                <div class="photo-particles"></div>
+            </div>
+            <div class="hero-pretitle" data-reveal>✦ A tribute to ✦</div>
+            <h1 class="hero-title">
+                <span class="line" data-reveal>My Brother</span>
+                <span class="line accent shimmer" data-reveal>My Forever Hero</span>
+            </h1>
+            <p class="hero-subtitle" data-reveal>
+                Twenty-five years ago, you entered this world and quietly changed everything.
+                You didn't know it then, but you were going to become the person I look up to most.
+            </p>
+            <div class="hero-actions" data-reveal>
+                <a href="#story" class="btn-primary">
+                    <span>Read Our Story</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint" data-reveal>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to begin</span>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section story-section" id="story">
+        <div class="section-stars" data-count="40" data-speed="slow"></div>
+        <div class="bg-orb orb-1"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Chapter One</span>
+                <h2 class="section-title">This Is Us</h2>
+                <p class="section-subtitle">The story of two kids who became best friends</p>
+            </div>
+            <div class="story-grid">
+                <div class="story-card card">
+                    <div class="story-image">
+                        <img src="images/photo-main.jpg" alt="My Brother" onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=700&fit=crop'">
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="story-text card">
+                        <p class="lead">I still remember the day Mom brought you home.</p>
+                        <p>I was supposed to be jealous — the older sibling, dethroned. But the moment I saw your tiny fingers wrap around mine, I knew my job had changed. I wasn't just a kid anymore. I was your protector, your partner-in-crime, your biggest fan.</p>
+                        <p>We fought over the remote. We built forts that collapsed. You ate my share of Maggi more times than I can count. But when the world got loud, you were the only voice that could calm me down.</p>
+                        <p>You taught me patience when you took an hour to tie your shoelaces. You taught me courage when you stood up to that bully twice your size. You taught me that family isn't just blood — it's choosing each other, every single day.</p>
+                        <p class="closing">And today, at 25, I don't just see my brother. I see the man I hope to become.</p>
+                    </div>
+                    <div class="story-stats">
+                        <div class="stat-glass">
+                            <span class="stat-num">25</span>
+                            <span class="stat-label">Years of You</span>
+                        </div>
+                        <div class="stat-glass">
+                            <span class="stat-num">∞</span>
+                            <span class="stat-label">Moments Shared</span>
+                        </div>
+                        <div class="stat-glass">
+                            <span class="stat-num">1</span>
+                            <span class="stat-label">Irreplaceable You</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 25 Reasons Section -->
+    <section class="section reasons-section" id="reasons">
+        <div class="section-stars" data-count="50" data-speed="medium"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Chapter Two</span>
+                <h2 class="section-title">25 Reasons Why<br><span class="accent">You're Amazing</span></h2>
+                <p class="section-subtitle">One for every year you've made this world better</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card card"><div class="reason-icon">😂</div><span class="num">01</span><p>Your laugh is the first thing I want to hear when I'm sad.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🎵</div><span class="num">02</span><p>You pretend to hate my music but secretly know every lyric.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🍕</div><span class="num">03</span><p>You always save the last bite for me, even when I say I don't want it.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🛡️</div><span class="num">04</span><p>You stood up for me when I couldn't stand up for myself.</p></div>
+                <div class="reason-card card"><div class="reason-icon">💡</div><span class="num">05</span><p>You give the world's worst advice with the world's best intentions.</p></div>
+                <div class="reason-card card"><div class="reason-icon">📸</div><span class="num">06</span><p>You remember every embarrassing thing I've done and remind me with love.</p></div>
+                <div class="reason-card card"><div class="reason-icon">💪</div><span class="num">07</span><p>You work harder than anyone I know, even when no one's watching.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🎬</div><span class="num">08</span><p>You cry during movies and pretend you have something in your eye.</p></div>
+                <div class="reason-card card"><div class="reason-icon">❤️</div><span class="num">09</span><p>You taught me that being kind is braver than being tough.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🤣</div><span class="num">10</span><p>You make the worst jokes and laugh the hardest at them.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🏆</div><span class="num">11</span><p>You never let me give up, even when I wanted to.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🤫</div><span class="num">12</span><p>You share your silence with me when words feel too heavy.</p></div>
+                <div class="reason-card card"><div class="reason-icon">💃</div><span class="num">13</span><p>You dance like nobody's watching — and they're all watching.</p></div>
+                <div class="reason-card card"><div class="reason-icon">📱</div><span class="num">14</span><p>You call me just to say "nothing, just checking on you."</p></div>
+                <div class="reason-card card"><div class="reason-icon">🌟</div><span class="num">15</span><p>You believe in my dreams louder than I believe in them myself.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🤝</div><span class="num">16</span><p>You forgive before I even finish apologizing.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🎉</div><span class="num">17</span><p>You make ordinary days feel like celebrations.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🌍</div><span class="num">18</span><p>You carry the weight of the world so others don't have to.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🤝</div><span class="num">19</span><p>You still hold my hand when we cross busy streets.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🥂</div><span class="num">20</span><p>You celebrate my wins like they're your own.</p></div>
+                <div class="reason-card card"><div class="reason-icon">💯</div><span class="num">21</span><p>You tell me the truth when I need it, even when it hurts.</p></div>
+                <div class="reason-card card"><div class="reason-icon">👨‍👩‍👧‍👦</div><span class="num">22</span><p>You make our parents prouder than they'll ever admit.</p></div>
+                <div class="reason-card card"><div class="reason-icon">✨</div><span class="num">23</span><p>You are the reason I believe in good people.</p></div>
+                <div class="reason-card card"><div class="reason-icon">🎂</div><span class="num">24</span><p>You turned 25 today, and the world is still not ready for your greatness.</p></div>
+                <div class="reason-card card featured"><div class="reason-icon">👑</div><span class="num">25</span><p>You are my brother. And that will always be my favorite thing about you.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Gallery -->
+    <section class="section gallery-section" id="gallery">
+        <div class="section-stars" data-count="35" data-speed="slow"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Chapter Three</span>
+                <h2 class="section-title">Moments That Made<br><span class="accent">Us "Us"</span></h2>
+                <p class="section-subtitle">Every picture holds a story only we understand</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/photo-1.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop'">
+                    <div class="gallery-caption ">
+                        <span>The beginning of everything</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-2.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption ">
+                        <span>Partners in crime</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-3.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption ">
+                        <span>Adventures together</span>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="images/photo-4.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=400&fit=crop'">
+                    <div class="gallery-caption ">
+                        <span>Celebrations and chaos</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-5.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption ">
+                        <span>The good old days</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-6.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1523301343968-6a6ebf63c672?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption">
+                        <span>Smiles that heal</span>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="images/photo-7.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=400&fit=crop'">
+                    <div class="gallery-caption">
+                        <span>More memories</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-8.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption">
+                        <span>Brotherhood</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photo-9.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&h=600&fit=crop'">
+                    <div class="gallery-caption">
+                        <span>Fun times</span>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="images/photo-10.jpg" alt="Memory" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop'">
+                    <div class="gallery-caption">
+                        <span>Best moments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section timeline-section" id="timeline">
+        <div class="section-stars" data-count="45" data-speed="medium"></div>
+        <div class="bg-orb orb-4"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Chapter Four</span>
+                <h2 class="section-title">The Journey of<br><span class="accent">Becoming You</span></h2>
+                <p class="section-subtitle">From the first breath to the man you are today</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card">
+                        <span class="year">2001</span>
+                        <h4>The Day Everything Changed</h4>
+                        <p>You arrived, small and loud, and I held your hand for the very first time. I didn't know it then, but my favorite person had just entered the world.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card">
+                        <span class="year">2007</span>
+                        <h4>First Day of School</h4>
+                        <p>You cried. I pretended not to. But when I saw you sitting alone at lunch, I sat next to you and shared my tiffin. Some things never change.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card">
+                        <span class="year">2015</span>
+                        <h4>The Trouble Years</h4>
+                        <p>We fought. A lot. Over clothes, rooms, the TV remote. But when Dad got mad at you, I took the blame. When I fell apart, you built me back up.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card">
+                        <span class="year">2019</span>
+                        <h4>Becoming Adults</h4>
+                        <p>College, heartbreaks, first jobs. We sat on the terrace at 2 AM more times than I can count — talking about dreams that felt too big to say out loud.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-node node-glow"></div>
+                    <div class="timeline-card card highlight">
+                        <span class="year">2026</span>
+                        <h4>25 & Unstoppable</h4>
+                        <p>Look at you now. The world tried to break you, and you smiled back. This is just the beginning, and I can't wait to see what you do next.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letters Section -->
+    <section class="section letters-section" id="letters">
+        <div class="section-stars" data-count="40" data-speed="slow"></div>
+        <div class="bg-orb orb-5"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Chapter Five</span>
+                <h2 class="section-title">Letters<br><span class="accent">To You</span></h2>
+                <p class="section-subtitle">Words from the people who love you most</p>
+            </div>
+            <div class="letters-grid">
+                <div class="letter-card card">
+                    <div class="letter-stamp">💌</div>
+                    <p class="letter-text">"From the day you were born, you had my heart. I am proud of the man you've become — kind, strong, and true. Happy 25th, my son."</p>
+                    <span class="letter-from">— With love, Family</span>
+                </div>
+                <div class="letter-card card featured">
+                    <div class="letter-stamp">🌟</div>
+                    <p class="letter-text">"You're not just my brother. You're my first friend, my forever friend, and the only person who knows why I laugh at things no one else understands."</p>
+                    <span class="letter-from">— Your Sibling</span>
+                </div>
+                <div class="letter-card card">
+                    <div class="letter-stamp">🎈</div>
+                    <p class="letter-text">"To the guy who makes every room brighter just by walking in. Here's to 25 years of you being absolutely legendary."</p>
+                    <span class="letter-from">— Your Friends</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Message / Wish Section -->
+    <section class="section wish-section" id="wish">
+        <div class="section-stars" data-count="60" data-speed="fast"></div>
+        <div class="bg-orb orb-6"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Final Chapter</span>
+                <h2 class="section-title">A Letter<br><span class="accent">For You</span></h2>
+            </div>
+            <div class="wish-card-master card">
+                <div class="wax-seal">25</div>
+                <div class="letter-content">
+                    <p class="salutation">Dear Brother,</p>
+                    <p>I could write a book about you and still not capture everything you mean to me.</p>
+                    <p>I could tell the world about your kindness, your stubbornness, your ridiculous dance moves, and the way you pretend not to care when you care the most. But some things are just ours.</p>
+                    <p>What I will say is this: you are the best thing that ever happened to me. Not because you're perfect — because you're not. But because you're real. Because you try. Because even on your worst days, you still show up for the people you love.</p>
+                    <p>At 25, you're standing at the edge of everything you've ever wanted. And I need you to know — you deserve it all. The love. The success. The peace. The adventure. Every single good thing that's coming your way.</p>
+                    <p>I hope this year gives you reasons to laugh until your stomach hurts. I hope you find moments so beautiful they take your breath away. I hope you realize, finally, how extraordinary you are.</p>
+                    <p class="closing">Happy Birthday. I love you more than words will ever hold.</p>
+                </div>
+                <div class="email-reveal">
+                    <button class="btn-seal" id="btnSeal">
+                        <span class="seal-icon">📧</span>
+                        <span class="seal-text">Open This Letter</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="section future-section">
+        <div class="container">
+            <div class="future-card card">
+                <h3>The Next 25 Years</h3>
+                <p>I don't know what life has planned for you. But I know this — wherever you go, whatever you do, you won't be alone. I'll be there. Cheering the loudest. Crying the proudest. Standing beside you, always.</p>
+                <div class="future-sig">— Your forever person</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-content">
+            <div class="footer-seal">25</div>
+            <p class="footer-line">Made with every ounce of love I have</p>
+            <p class="footer-copy">For the best brother in the world · 2026</p>
+        </div>
+    </footer>
+
+    <!-- Blast Modal -->
+    <div class="blast-overlay" id="blastOverlay">
+        <div class="blast-modal card">
+            <div class="blast-burst">🎉</div>
+            <h3>Your Letter Has Arrived!</h3>
+            <div class="blast-letter">
+                <p>Dear Brother,</p>
+                <p>I could write a book about you and still not capture everything you mean to me.</p>
+                <p>I could tell the world about your kindness, your stubbornness, your ridiculous dance moves, and the way you pretend not to care when you care the most. But some things are just ours.</p>
+                <p>What I will say is this: you are the best thing that ever happened to me. Not because you're perfect — because you're not. But because you're real. Because you try. Because even on your worst days, you still show up for the people you love.</p>
+                <p>At 25, you're standing at the edge of everything you've ever wanted. And I need you to know — you deserve it all. The love. The success. The peace. The adventure. Every single good thing that's coming your way.</p>
+                <p>I hope this year gives you reasons to laugh until your stomach hurts. I hope you find moments so beautiful they take your breath away. I hope you realize, finally, how extraordinary you are.</p>
+                <p class="blast-close">Happy Birthday. I love you more than words will ever hold.</p>
+            </div>
+            <button class="btn-close-blast" id="closeBlast">Keep This Close to Your Heart</button>
+        </div>
+    </div>
+
+    <script src="script.js?v=18"></script>
+</body>
+</html>
